@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" />
+    <title>tabs</title>
+  </head>
+  <body>
+    <header>
+      <nav class="">
+        <ul class="ml-8 mt-8 flex list-none">
+          <li id="select-tab" class="ml-4 cursor-pointer bg-blue-400 p-2">
+            tab 1
+          </li>
+          <li id="select-tab" class="ml-4 cursor-pointer p-2 hover:bg-blue-400">
+            tab 2
+          </li>
+          <li id="select-tab" class="ml-4 cursor-pointer p-2 hover:bg-blue-400">
+            tab 3
+          </li>
+          <li id="select-tab" class="ml-4 cursor-pointer p-2 hover:bg-blue-400">
+            tab 4
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section
+      id="select-content"
+      class="top-0 ml-12 flex h-20 w-80 items-center justify-center bg-blue-400 p-2 text-4xl"
+    >
+      tab1
+    </section>
+
+    <section
+      id="select-content"
+      class="top-0 ml-12 flex hidden h-20 w-80 items-center justify-center bg-blue-400 p-2 text-4xl"
+    >
+      tab2
+    </section>
+
+    <section
+      id="select-content"
+      class="top-0 ml-12 flex hidden h-20 w-80 items-center justify-center bg-blue-400 p-2 text-4xl"
+    >
+      tab3
+    </section>
+
+    <script>
+      const tabsArray = Array.from(document.querySelectorAll("#select-tab"));
+
+      const contentArray = Array.from(
+        document.querySelectorAll("#select-content"),
+      );
+
+      tabsArray.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          //elegir el elemento
+          const target = tab;
+          //loopear sobre todos los elementos y quitarle el fondo activo
+          tabsArray.forEach((t) => {
+            t.classList.remove("bg-blue-400");
+          });
+          //
+          const currentTab = tabsArray.indexOf(target);
+
+          contentArray.forEach((content) => {
+            if (contentArray.indexOf(content) === currentTab) {
+              content.classList.remove("hidden");
+            } else if (contentArray.indexOf(content) !== currentTab) {
+              content.classList.add("hidden");
+            }
+          });
+
+          target.classList.add("bg-blue-400");
+        });
+      });
+    </script>
+  </body>
+</html>
