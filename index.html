@@ -110,10 +110,10 @@
         <!-- jumbotron start -->
         <div
           id="content"
-          class="container m-auto w-full justify-center overflow-hidden min-[300px]:h-[550px] sm:h-[350px]"
+          class="container m-auto w-full justify-center overflow-hidden min-[300px]:h-[550px] sm:mt-8 sm:h-[350px]"
         >
           <img
-            class="object-cover min-[300px]:h-[450px] sm:w-full"
+            class="object-cover min-[300px]:h-[500px] sm:w-full"
             src="/img/jumbotron.jpg"
             alt="Imagen del jumbotro"
           />
@@ -121,16 +121,17 @@
         <!-- jumbotron end -->
 
         <!-- tablas star -->
-        <div class="container m-auto w-full min-[300px]:my-0 sm:my-8">
+        <div class="container m-auto w-full min-[300px]:my-0 sm:mt-8">
           <div class="px-8 sm:hidden">
             <label for="Tab" class="sr-only">Tab</label>
 
             <select id="Tab" class="w-full rounded-md border-gray-200">
+              <option selected>Tutti</option>
               <option>Antipastri</option>
               <option>Primo Piato</option>
               <option>Secondo Piato</option>
               <option>Postre</option>
-              <option selected>Bevande</option>
+              <option>Bevande</option>
             </select>
           </div>
 
@@ -184,314 +185,355 @@
 
       <!-- contenedor cards de Antipastri start -->
 
-      <div
-        id="select-content"
-        class="container m-auto my-8 flex w-full flex-wrap justify-start px-8"
-      >
-        <!-- cards 1 start -->
+      <div id="select-content">
+        <h2 class="p-4 text-2xl font-bold text-gray-800">Antipasti</h2>
         <div
-          class="min-w[350px] p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
+          class="container m-auto my-8 flex w-full flex-wrap justify-start px-8"
         >
+          <!-- cards 1 start -->
           <div
-            class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            class="min-w[350px] p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
           >
-            <img
-              class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
-              src="/img/arepas_index.jpg"
-              alt="imagen de la card"
-            />
+            <div
+              class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            >
+              <img
+                class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
+                src="/img/arepas_index.jpg"
+                alt="imagen de la card"
+              />
 
-            <div class="container -mt-4 p-6">
-              <h3 class="text-xl font-bold text-gray-800">Titulo de la card</h3>
-              <p class="mt-2 text-balance text-gray-700">
-                Descripcion de la card Descripcion de la card Descripcion de la
-                card
-              </p>
-              <details>
-                <summary class="cursor-pointer text-blue-600">Detalles</summary>
-                <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
-              </details>
-            </div>
-            <div class="mx-4 mb-6">
-              <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
-                >Price: 8,00 €
-              </a>
+              <div class="container -mt-4 p-6">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Titulo de la card
+                </h3>
+                <p class="mt-2 text-balance text-gray-700">
+                  Descripcion de la card Descripcion de la card Descripcion de
+                  la card
+                </p>
+                <details>
+                  <summary class="cursor-pointer text-blue-600">
+                    Detalles
+                  </summary>
+                  <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
+                </details>
+              </div>
+              <div class="mx-4 mb-6">
+                <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
+                  >Price: 8,00 €
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- cards 1 end -->
+          <!-- cards 1 end -->
 
-        <!-- cards 2 start -->
-        <div
-          class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
-        >
+          <!-- cards 2 start -->
           <div
-            class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
           >
-            <img
-              class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
-              src="/img/arepas_index.jpg"
-              alt="imagen de la card"
-            />
+            <div
+              class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            >
+              <img
+                class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
+                src="/img/arepas_index.jpg"
+                alt="imagen de la card"
+              />
 
-            <div class="container -mt-4 p-6">
-              <h3 class="text-xl font-bold text-gray-800">Titulo de la card</h3>
-              <p class="mt-2 text-balance text-gray-700">
-                Descripcion de la card Descripcion de la card Descripcion de la
-                card
-              </p>
-              <details>
-                <summary class="cursor-pointer text-blue-600">Detalles</summary>
-                <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
-              </details>
-            </div>
-            <div class="mx-4 mb-6">
-              <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
-                >Price: 8,00 €
-              </a>
+              <div class="container -mt-4 p-6">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Titulo de la card
+                </h3>
+                <p class="mt-2 text-balance text-gray-700">
+                  Descripcion de la card Descripcion de la card Descripcion de
+                  la card
+                </p>
+                <details>
+                  <summary class="cursor-pointer text-blue-600">
+                    Detalles
+                  </summary>
+                  <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
+                </details>
+              </div>
+              <div class="mx-4 mb-6">
+                <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
+                  >Price: 8,00 €
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- cards 2 end -->
+          <!-- cards 2 end -->
 
-        <!-- cards 3 start -->
-        <div
-          class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
-        >
+          <!-- cards 3 start -->
           <div
-            class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
           >
-            <img
-              class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
-              src="/img/arepas_index.jpg"
-              alt="imagen de la card"
-            />
+            <div
+              class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            >
+              <img
+                class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
+                src="/img/arepas_index.jpg"
+                alt="imagen de la card"
+              />
 
-            <div class="container -mt-4 p-6">
-              <h3 class="text-xl font-bold text-gray-800">Titulo de la card</h3>
-              <p class="mt-2 text-balance text-gray-700">
-                Descripcion de la card Descripcion de la card Descripcion de la
-                card
-              </p>
-              <details>
-                <summary class="cursor-pointer text-blue-600">Detalles</summary>
-                <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
-              </details>
-            </div>
-            <div class="mx-4 mb-6">
-              <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
-                >Price: 8,00 €
-              </a>
+              <div class="container -mt-4 p-6">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Titulo de la card
+                </h3>
+                <p class="mt-2 text-balance text-gray-700">
+                  Descripcion de la card Descripcion de la card Descripcion de
+                  la card
+                </p>
+                <details>
+                  <summary class="cursor-pointer text-blue-600">
+                    Detalles
+                  </summary>
+                  <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
+                </details>
+              </div>
+              <div class="mx-4 mb-6">
+                <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
+                  >Price: 8,00 €
+                </a>
+              </div>
             </div>
           </div>
+          <!-- cards 3 end -->
         </div>
-        <!-- cards 3 end -->
       </div>
 
       <!-- contenedor cards de Antipastri start -->
 
       <!-- contenedor cards de Primo Piato start -->
-      <div
-        id="select-content"
-        class="container m-auto my-8 flex w-full flex-wrap justify-start"
-      >
-        <!-- cards 1 start -->
-        <div
-          class="min-w[350px] p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
-        >
-          <div
-            class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
-          >
-            <img
-              class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
-              src="/img/arepas_index.jpg"
-              alt="imagen de la card"
-            />
+      <div id="select-content">
+        <h2 class="p-4 text-2xl font-bold text-gray-800">Primo Piato</h2>
 
-            <div class="container -mt-4 p-6">
-              <h3 class="text-xl font-bold text-gray-800">Titulo de la card</h3>
-              <p class="mt-2 text-balance text-gray-700">
-                Descripcion de la card Descripcion de la card Descripcion de la
-                card
-              </p>
-              <details>
-                <summary class="cursor-pointer text-blue-600">Detalles</summary>
-                <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
-              </details>
-            </div>
-            <div class="mx-4 mb-6">
-              <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
-                >Price: 8,00 €
-              </a>
+        <div
+          class="container m-auto my-8 flex w-full flex-wrap justify-start px-8"
+        >
+          <!-- cards 1 start -->
+          <div
+            class="min-w[350px] p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
+          >
+            <div
+              class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            >
+              <img
+                class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
+                src="/img/arepas_index.jpg"
+                alt="imagen de la card"
+              />
+
+              <div class="container -mt-4 p-6">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Titulo de la card
+                </h3>
+                <p class="mt-2 text-balance text-gray-700">
+                  Descripcion de la card Descripcion de la card Descripcion de
+                  la card
+                </p>
+                <details>
+                  <summary class="cursor-pointer text-blue-600">
+                    Detalles
+                  </summary>
+                  <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
+                </details>
+              </div>
+              <div class="mx-4 mb-6">
+                <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
+                  >Price: 8,00 €
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- cards 1 end -->
+          <!-- cards 1 end -->
 
-        <!-- cards 2 start -->
-        <div
-          class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
-        >
+          <!-- cards 2 start -->
           <div
-            class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
           >
-            <img
-              class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
-              src="/img/arepas_index.jpg"
-              alt="imagen de la card"
-            />
+            <div
+              class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            >
+              <img
+                class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
+                src="/img/arepas_index.jpg"
+                alt="imagen de la card"
+              />
 
-            <div class="container -mt-4 p-6">
-              <h3 class="text-xl font-bold text-gray-800">Titulo de la card</h3>
-              <p class="mt-2 text-balance text-gray-700">
-                Descripcion de la card Descripcion de la card Descripcion de la
-                card
-              </p>
-              <details>
-                <summary class="cursor-pointer text-blue-600">Detalles</summary>
-                <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
-              </details>
-            </div>
-            <div class="mx-4 mb-6">
-              <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
-                >Price: 8,00 €
-              </a>
+              <div class="container -mt-4 p-6">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Titulo de la card
+                </h3>
+                <p class="mt-2 text-balance text-gray-700">
+                  Descripcion de la card Descripcion de la card Descripcion de
+                  la card
+                </p>
+                <details>
+                  <summary class="cursor-pointer text-blue-600">
+                    Detalles
+                  </summary>
+                  <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
+                </details>
+              </div>
+              <div class="mx-4 mb-6">
+                <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
+                  >Price: 8,00 €
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- cards 2 end -->
+          <!-- cards 2 end -->
 
-        <!-- cards 3 start -->
-        <div
-          class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
-        >
+          <!-- cards 3 start -->
           <div
-            class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
           >
-            <img
-              class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
-              src="/img/arepas_index.jpg"
-              alt="imagen de la card"
-            />
+            <div
+              class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            >
+              <img
+                class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
+                src="/img/arepas_index.jpg"
+                alt="imagen de la card"
+              />
 
-            <div class="container -mt-4 p-6">
-              <h3 class="text-xl font-bold text-gray-800">Titulo de la card</h3>
-              <p class="mt-2 text-balance text-gray-700">
-                Descripcion de la card Descripcion de la card Descripcion de la
-                card
-              </p>
-              <details>
-                <summary class="cursor-pointer text-blue-600">Detalles</summary>
-                <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
-              </details>
-            </div>
-            <div class="mx-4 mb-6">
-              <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
-                >Price: 8,00 €
-              </a>
+              <div class="container -mt-4 p-6">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Titulo de la card
+                </h3>
+                <p class="mt-2 text-balance text-gray-700">
+                  Descripcion de la card Descripcion de la card Descripcion de
+                  la card
+                </p>
+                <details>
+                  <summary class="cursor-pointer text-blue-600">
+                    Detalles
+                  </summary>
+                  <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
+                </details>
+              </div>
+              <div class="mx-4 mb-6">
+                <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
+                  >Price: 8,00 €
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- cards 3 end -->
+          <!-- cards 3 end -->
 
-        <!-- cards 1 start -->
-        <div
-          class="container m-auto w-full p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
-        >
+          <!-- cards 1 start -->
           <div
-            class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            class="container m-auto w-full p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
           >
-            <img
-              class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
-              src="/img/arepas_index.jpg"
-              alt="imagen de la card"
-            />
+            <div
+              class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            >
+              <img
+                class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
+                src="/img/arepas_index.jpg"
+                alt="imagen de la card"
+              />
 
-            <div class="container -mt-4 p-6">
-              <h3 class="text-xl font-bold text-gray-800">Titulo de la card</h3>
-              <p class="mt-2 text-balance text-gray-700">
-                Descripcion de la card Descripcion de la card Descripcion de la
-                card
-              </p>
-              <details>
-                <summary class="cursor-pointer text-blue-600">Detalles</summary>
-                <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
-              </details>
-            </div>
-            <div class="mx-4 mb-6">
-              <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
-                >Price: 8,00 €
-              </a>
+              <div class="container -mt-4 p-6">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Titulo de la card
+                </h3>
+                <p class="mt-2 text-balance text-gray-700">
+                  Descripcion de la card Descripcion de la card Descripcion de
+                  la card
+                </p>
+                <details>
+                  <summary class="cursor-pointer text-blue-600">
+                    Detalles
+                  </summary>
+                  <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
+                </details>
+              </div>
+              <div class="mx-4 mb-6">
+                <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
+                  >Price: 8,00 €
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- cards 1 end -->
+          <!-- cards 1 end -->
 
-        <!-- cards 2 start -->
-        <div
-          class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
-        >
+          <!-- cards 2 start -->
           <div
-            class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
           >
-            <img
-              class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
-              src="/img/arepas_index.jpg"
-              alt="imagen de la card"
-            />
+            <div
+              class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            >
+              <img
+                class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
+                src="/img/arepas_index.jpg"
+                alt="imagen de la card"
+              />
 
-            <div class="container -mt-4 p-6">
-              <h3 class="text-xl font-bold text-gray-800">Titulo de la card</h3>
-              <p class="mt-2 text-balance text-gray-700">
-                Descripcion de la card Descripcion de la card Descripcion de la
-                card
-              </p>
-              <details>
-                <summary class="cursor-pointer text-blue-600">Detalles</summary>
-                <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
-              </details>
-            </div>
-            <div class="mx-4 mb-6">
-              <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
-                >Price: 8,00 €
-              </a>
+              <div class="container -mt-4 p-6">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Titulo de la card
+                </h3>
+                <p class="mt-2 text-balance text-gray-700">
+                  Descripcion de la card Descripcion de la card Descripcion de
+                  la card
+                </p>
+                <details>
+                  <summary class="cursor-pointer text-blue-600">
+                    Detalles
+                  </summary>
+                  <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
+                </details>
+              </div>
+              <div class="mx-4 mb-6">
+                <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
+                  >Price: 8,00 €
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- cards 2 end -->
+          <!-- cards 2 end -->
 
-        <!-- cards 3 start -->
-        <div
-          class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
-        >
+          <!-- cards 3 start -->
           <div
-            class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            class="p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
           >
-            <img
-              class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
-              src="/img/arepas_index.jpg"
-              alt="imagen de la card"
-            />
+            <div
+              class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
+            >
+              <img
+                class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
+                src="/img/arepas_index.jpg"
+                alt="imagen de la card"
+              />
 
-            <div class="container -mt-4 p-6">
-              <h3 class="text-xl font-bold text-gray-800">Titulo de la card</h3>
-              <p class="mt-2 text-balance text-gray-700">
-                Descripcion de la card Descripcion de la card Descripcion de la
-                card
-              </p>
-              <details>
-                <summary class="cursor-pointer text-blue-600">Detalles</summary>
-                <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
-              </details>
-            </div>
-            <div class="mx-4 mb-6">
-              <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
-                >Price: 8,00 €
-              </a>
+              <div class="container -mt-4 p-6">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Titulo de la card
+                </h3>
+                <p class="mt-2 text-balance text-gray-700">
+                  Descripcion de la card Descripcion de la card Descripcion de
+                  la card
+                </p>
+                <details>
+                  <summary class="cursor-pointer text-blue-600">
+                    Detalles
+                  </summary>
+                  <p class="ml-4 text-gray-700">Pidela de tu sabor preferido</p>
+                </details>
+              </div>
+              <div class="mx-4 mb-6">
+                <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
+                  >Price: 8,00 €
+                </a>
+              </div>
             </div>
           </div>
+          <!-- cards 3 end -->
         </div>
-        <!-- cards 3 end -->
       </div>
 
       <!-- contenedor cards de Primo Piato start -->
