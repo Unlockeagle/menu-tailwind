@@ -39,3 +39,10 @@ tabsArray.forEach((tab) => {
     target.classList.add("text-white");
   });
 });
+
+const tab = document.querySelector("#tab");
+const result = document.querySelector("#result");
+
+tab.onchange = function () {
+  result.textContent = this.value;
+};
