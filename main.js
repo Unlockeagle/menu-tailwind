@@ -44,5 +44,5 @@ const tab = document.querySelector("#tab");
 const result = document.querySelector("#result");
 
 tab.onchange = function () {
-  result.textContent = this.value;
+  result.style.display(conten);
 };

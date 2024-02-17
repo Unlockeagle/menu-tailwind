@@ -10,7 +10,7 @@
   <body class="bg-white">
     <aside
       id="sliderBar"
-      class="fixed left-0 top-0 z-20 hidden h-full w-[50%] rounded-2xl border-2 bg-slate-200 p-2 shadow-md shadow-slate-800"
+      class="fixed right-0 top-0 z-20 hidden h-full w-[50%] rounded-2xl border-2 bg-slate-200 p-2 shadow-md shadow-slate-800"
     >
       <img
         class="my-auto h-8 w-8 cursor-pointer"
@@ -54,24 +54,12 @@
     </aside>
 
     <main class="container m-auto w-full">
-      <header
-        class="container sticky top-0 z-10 mx-auto flex h-16 w-full bg-white px-8"
-      >
-        <nav class="container flex justify-between">
-          <div
-            class="container mx-auto flex w-full items-center align-middle min-[300px]:justify-start"
-          >
-            <div class="mt-2 w-full min-[540px]:contents lg:hidden">
+      <header class="sticky top-0 z-10 mx-auto flex h-16 w-full bg-white px-8">
+        <nav class="m-auto -mt-7 flex w-full justify-between">
+          <div class="flex w-full">
+            <div class="m-auto my-8 flex w-full items-center justify-start">
               <img
-                id="menuBurger"
-                class="my-auto h-10 w-10 cursor-pointer"
-                src="/img/menu-hamburger-svg.svg"
-                alt=""
-              />
-            </div>
-            <div class="m-auto my-4 flex w-full items-center justify-center">
-              <img
-                class="h-12 w-12"
+                class="h-12 w-12 xl:ml-32"
                 src="/img/logo-arepa-yellow.png"
                 alt="logo del restaurante"
               />
@@ -80,6 +68,7 @@
               >
                 RESTAURANTE
               </h1>
+
               <ul
                 class="m-2 ml-6 flex list-none items-center justify-around gap-8 min-[300px]:hidden sm:hidden md:hidden lg:flex xl:flex"
               >
@@ -96,12 +85,20 @@
               </ul>
             </div>
           </div>
-          <div class="mt-4 min-[300px]:hidden md:flex">
+          <div class="mt-12 w-[300px] min-[300px]:hidden md:inline">
             <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
               >Reserva ya!
             </a>
           </div>
         </nav>
+        <div class="m-auto lg:hidden">
+          <img
+            id="menuBurger"
+            class="h-10 w-10 cursor-pointer"
+            src="/img/menu-hamburger-svg.svg"
+            alt="menu"
+          />
+        </div>
       </header>
 
       <div
@@ -118,6 +115,11 @@
             alt="Imagen del jumbotro"
           />
         </div>
+        <h1
+          class="container m-auto my-8 flex items-center justify-center text-pretty text-5xl"
+        >
+          La mejor comida mejor Venezolana en Firenze 🤌
+        </h1>
         <!-- jumbotron end -->
 
         <!-- tablas star -->
@@ -126,45 +128,7 @@
             <label for="Tab" class="sr-only">Tab</label>
 
             <select id="tab" class="w-full rounded-md border-gray-200">
-              <option value="Tutti" selected>
-                <div
-                  class="min-w[350px] p-4 transition duration-300 ease-in-out hover:scale-105 md:w-1/2 xl:w-1/4"
-                >
-                  <div
-                    class="h-full overflow-hidden rounded-lg border-2 border-gray-400 border-opacity-45 shadow-md shadow-slate-200"
-                  >
-                    <img
-                      class="w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110 md:h-48 lg:h-48"
-                      src="/img/arepas_index.jpg"
-                      alt="imagen de la card"
-                    />
-
-                    <div class="container -mt-4 p-6">
-                      <h3 class="text-xl font-bold text-gray-800">
-                        Titulo de la card
-                      </h3>
-                      <p class="mt-2 text-balance text-gray-700">
-                        Descripcion de la card Descripcion de la card
-                        Descripcion de la card
-                      </p>
-                      <details>
-                        <summary class="cursor-pointer text-blue-600">
-                          Detalles
-                        </summary>
-                        <p class="ml-4 text-gray-700">
-                          Pidela de tu sabor preferido
-                        </p>
-                      </details>
-                    </div>
-                    <div class="mx-4 mb-6">
-                      <a class="rounded-md bg-yellow-500 p-2 px-4" href="#"
-                        >Price: 8,00 €
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- cards 1 end -->
-              </option>
+              <option selected>Tutti</option>
               <option>Antipastri</option>
               <option>Primo Piato</option>
               <option>Secondo Piato</option>
